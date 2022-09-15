@@ -24,6 +24,8 @@ function loadDades() {
     h1.textContent = "Vols " + r + " peces de xocolata. " +
         " Necessites " + numerorajoles + " rajoles de " + n + " * " + m;
 
+    div.appendChild(h1);
+
     for (let i = 0; i < numerorajoles; i++) {
 
         let table = document.createElement("table");
@@ -35,7 +37,7 @@ function loadDades() {
                 let td = document.createElement("td");
                 td.className = "quadret";
                 row.appendChild(td);
-                div.appendChild(h1);
+
             }
             table.appendChild(row);
         }
